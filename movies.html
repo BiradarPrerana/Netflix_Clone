@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Main Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <img src="images/logo.png" alt="logo" class="nav__logo" />
+      <img src="images/avatar.png" alt="avatar" class="nav__avatar" />
+    </div>
+    <div class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__tittle">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__buttons">Play</button>
+          <button class="banner__buttons">My List</button>
+        </div>
+        <div class="banner__description">
+          To carry out the biggest heist in the history, a mysterious man called
+          The Professor recruits a band of eight robbers who have a single
+          characteristic: n...
+        </div>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </div>
+
+    <div class="row" id="thriller">
+      <h2>Thriller</h2>
+      <div class="row__posters">
+        <img src="images/m1.jpg" alt="Money heist" class="row__poster" />
+        <img src="images/m2.jpg" alt="elite" class="row__poster" />
+        <img src="images/m3.jpg" alt="The alist" class="row__poster" />
+        <img src="images/m4.jpg" alt="I care alot" class="row__poster" />
+        <img src="images/m5.jpg" alt="Guilty" class="row__poster" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>Suspence</h2>
+      <div class="row__posters">
+        <img src="images/m6.jpg" alt="V Wars" class="row__poster" />
+        <img src="images/m15.jpg" alt="The society" class="row__poster" />
+        <img src="images/m8.jpg" alt="Ragnarok" class="row__poster" />
+        <img src="images/m9.jpg" alt="I care alot" class="row__poster" />
+        <img src="images/m10.jpg" alt="The society" class="row__poster" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>Children</h2>
+      <div class="row__posters">
+        <img src="images/m11.jpg" alt="boss baby" class="row__poster" />
+        <img src="images/m12.jpg" alt="The unlisted" class="row__poster" />
+        <img src="images/m13.jpg" alt="The lost dragon" class="row__poster" />
+        <img
+          src="images/m14.jpg"
+          alt="vivo"
+          class="row__poster row__posterLarge"
+        />
+        <img src="images/m7.jpg" alt="The inbestors" class="row__poster" />
+      </div>
+    </div>
+    <script>
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add("nav__black");
+        } else {
+          nav.classList.remove("nav__black");
+        }
+      });
+    </script>
+    <footer class="footer">
+      <p>Questions? Call 000-800-040-1843</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Watch for Free</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Ways to Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Centre</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down"
+              >
+                <option value="english" selected>English</option>
+                <option value="hindi">Hindi</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
